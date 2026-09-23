@@ -69,13 +69,13 @@
 
 #define CONTINUE_CMD    L"CONTINUE"
 
-#define PROGRAMTITLE    L"UPGDSED v1.2.1"
+#define PROGRAMTITLE    L"UPGDSED v1.2.2"
 #define PROGRAMFULLNAME L"Universal PatchGuard and Driver Signature Enforcement Disable"
 
 #define MAX_PATCH_COUNT 10
 
 #define MIN_SUPPORTED_NT_BUILD 7601  //Windows 7 SP1
-#define MAX_SUPPORTED_NT_BUILD 16299 //Windows 10 RS3
+#define MAX_SUPPORTED_NT_BUILD 26200 //Windows 11   10.0.26200.XXXX
 
 typedef struct _PATCH_CONTEXT {
     ULONG_PTR AddressOfPatch;

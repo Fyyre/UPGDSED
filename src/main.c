@@ -80,13 +80,13 @@ BOOLEAN ScanNtos(
     do {
 
 
-#ifndef _DEBUG
+//#ifndef _DEBUG
         _strcpy(szBuffer, g_szTempDirectory);
         _strcat(szBuffer, NTOSKRNMP_EXE);
-#else 
+//#else 
         //_strcpy(szBuffer, L"D:\\dumps\\pgos\\6.1.7601.18471\\ntoskrnl.exe");
         //_strcpy(szBuffer, L"D:\\dumps\\pgos\\6.1.7601.23418\\ntoskrnl.exe");
-        _strcpy(szBuffer, L"D:\\dumps\\pgos\\6.1.7601.24059\\ntoskrnl.exe");
+//        _strcpy(szBuffer, L"D:\\dumps\\pgos\\6.1.7601.24059\\ntoskrnl.exe");
         //_strcpy(szBuffer, L"D:\\dumps\\pgos\\6.2.9200.16384\\ntoskrnl.exe");
         //_strcpy(szBuffer, L"D:\\dumps\\pgos\\6.3.9600.18589\\ntoskrnl.exe");
         //_strcpy(szBuffer, L"D:\\dumps\\pgos\\10.0.10240.16384\\ntoskrnl.exe");
@@ -94,7 +94,7 @@ BOOLEAN ScanNtos(
         //_strcpy(szBuffer, L"D:\\dumps\\pgos\\10.0.14393.0\\ntoskrnl.exe");
         //_strcpy(szBuffer, L"D:\\dumps\\pgos\\10.0.15063.0\\ntoskrnl.exe");
         //_strcpy(szBuffer, L"D:\\dumps\\pgos\\10.0.16299.15\\ntoskrnl.exe");
-#endif
+//#endif
 
         if (!supGetBinaryVersionNumbers(
             szBuffer,
@@ -302,7 +302,7 @@ BOOLEAN ScanWinload(
 
     do {
 
-#ifndef _DEBUG
+//#ifndef _DEBUG
         _strcpy(szBuffer, g_szTempDirectory);
         if (g_IsEFI != FALSE) {
             _strcat(szBuffer, OSLOAD_EFI);
@@ -310,7 +310,7 @@ BOOLEAN ScanWinload(
         else {
             _strcat(szBuffer, OSLOAD_EXE);
         }
-#else
+//#else
         //_strcpy(szBuffer, L"D:\\dumps\\pgos\\6.1.7601.23418\\winload.exe");
         //_strcpy(szBuffer, L"D:\\dumps\\pgos\\6.2.9200.16384\\winload.exe");
         //_strcpy(szBuffer, L"D:\\dumps\\pgos\\6.3.9600.18589\\winload.exe");
@@ -318,8 +318,8 @@ BOOLEAN ScanWinload(
         //_strcpy(szBuffer, L"D:\\dumps\\pgos\\10.0.10586.0\\winload.exe");
         //_strcpy(szBuffer, L"D:\\dumps\\pgos\\10.0.14393.0\\winload.exe");
         //_strcpy(szBuffer, L"D:\\dumps\\pgos\\10.0.15063.0\\winload.exe");
-        _strcpy(szBuffer, L"D:\\dumps\\pgos\\10.0.16299.15\\winload.exe");
-#endif
+        //_strcpy(szBuffer, L"D:\\dumps\\pgos\\10.0.16299.15\\winload.exe");
+//#endif
 
         if (!supGetBinaryVersionNumbers(
             szBuffer,
@@ -558,6 +558,7 @@ UINT PatchMain()
             break;
         }
 
+        /*
         if (osver.dwBuildNumber != NtBuildNumber) {
             
             _strcpy(szBuffer, TEXT("\n\rApplication Compatibility Mode is active.\n\rDisable it for this application."));
@@ -569,6 +570,7 @@ UINT PatchMain()
 
             break;
         }
+        */
 
         //
         // Check if patch already installed.
@@ -779,9 +781,9 @@ UINT PatchMain()
             cuiPrintText(g_ConOut, TEXT("\nPatch: Winload scan complete."), g_ConsoleOutput, TRUE);
         }
 
-#ifdef _DEBUG
-        return 0;
-#endif
+//#ifdef _DEBUG
+//        return 0;
+//#endif
 
         //
         // Modify files and move them to %systemroot%\system32.

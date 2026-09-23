@@ -1,5 +1,8 @@
 Changes since v1.0.0 release
 
+v1.2.2 Sept 23, 2026
+Support for Windows 11 24H2/25H2 added
+
 v1.2.1 Mar 29, 2018
 Addressing Windows 7 KB4088875/KB4100480 changes, issue #18
 
