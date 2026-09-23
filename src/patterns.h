@@ -4,9 +4,9 @@
 *
 *  TITLE:       PATTERNS.H
 *
-*  VERSION:     1.21
+*  VERSION:     1.22
 *
-*  DATE:        29 Mar 2018
+*  DATE:        23 Sept 2026
 *
 *  Search patterns and patches header file.
 *
