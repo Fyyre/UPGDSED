@@ -43,14 +43,22 @@ Navigate to Windows\System32 folder and delete ntkrnlmp.exe, osloader.exe (BIOS 
 UPGDSED comes with full source code.
 In order to build from source you need Microsoft Visual Studio 2015 and later versions.
 
-# Deprecation
+# Status
 
-The project has been deprecated in 2018. No further updates (or plans on them) are available. If you still need PatchGuard disable refer to these repositories (alphabetical order):
+~~The project has been deprecated in 2018. No further updates (or plans on them) are available.~~
+
+Project resumed Sept 23, 2026.
+
+Last update Sept 25, 2026.
+Tested on Ntoskrnl version 10.0.26100.9457 and Winload version 10.0.26100.9444
+
+~~If you still need PatchGuard disable refer to these repositories (alphabetical order):~~
+
+For modern 'eloquent' PatchGuard disable methods, refer to these repositories/methods (alphabetical order):
 
 * EfiGuard, https://github.com/Mattiwatti/EfiGuard
+* PgC, https://blog.can.ac/2024/06/28/pgc-garbage-collecting-patchguard
 * Shark, https://github.com/9176324/Shark
-
-This repository is kept read-only for historical purposes.
 
 # References
 

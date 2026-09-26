@@ -6,7 +6,7 @@
 *
 *  VERSION:     1.22
 *
-*  DATE:        23 Sept 2026
+*  DATE:        25 Sept 2026
 *
 * THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
 * ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED
@@ -1184,12 +1184,12 @@ BOOLEAN QueryImgpValidateImageHashOffsetSignatures(
 
     case 26100:
         Pattern = ptImgpValidateImageHash_26100;
-        Pattern = sizeof(ptImgpValidateImageHash_26100);
+        PatternSize = sizeof(ptImgpValidateImageHash_26100);
         break;
 
     case 26200:
         Pattern = ptImgpValidateImageHash_26100;
-        Pattern = sizeof(ptImgpValidateImageHash_26100);
+        PatternSize = sizeof(ptImgpValidateImageHash_26100);
         break;
     default:
         break;

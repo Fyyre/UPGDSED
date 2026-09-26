@@ -29,6 +29,7 @@
 #pragma comment(lib, "ucrtd.lib")
 #else
 #pragma comment(lib, "libvcruntime.lib")
+#pragma comment(lib, "libucrt.lib")
 #endif
 #endif
 
