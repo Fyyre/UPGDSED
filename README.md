@@ -12,7 +12,7 @@ x64 Windows, supported versions:
 * Windows 8
 * Windows 8.1
 * Windows 10 (TH1/TH2/RS1/RS2/RS3)
-* Windows 11 (24H2/25H2)
+* Windows 11 (24H2/25H2/26H2)
 
 Administrative privilege is required.
 
