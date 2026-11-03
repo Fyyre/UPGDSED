@@ -49,8 +49,8 @@ In order to build from source you need Microsoft Visual Studio 2015 and later ve
 
 Project resumed Sept 23, 2026.
 
-Last update Sept 25, 2026.
-Tested on Ntoskrnl version 10.0.26100.9457 and Winload version 10.0.26100.9444
+Last update Nov 1, 2026.
+Tested on Ntoskrnl version Windows 11 26300.9711
 
 ~~If you still need PatchGuard disable refer to these repositories (alphabetical order):~~
 
