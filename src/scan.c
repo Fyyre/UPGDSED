@@ -827,6 +827,11 @@ BOOLEAN QuerySeValidateImageDataOffset(
     case 14393:
     case 15063:
     case 16299:
+    case 19041:
+    case 19042:
+    case 19043:
+    case 19044:
+    case 19045:
     case 26100:
     case 26200:
     case 26300:
@@ -873,6 +878,11 @@ BOOLEAN QuerySeValidateImageDataOffset(
 
         case 15063:
         case 16299:
+        case 19041:
+        case 19042:
+        case 19043:
+        case 19044:
+        case 19045:
             Pattern = ptSeValidateImageData_2_15063_16299;
             PatternSize = sizeof(ptSeValidateImageData_2_15063_16299);
             break;
@@ -880,7 +890,7 @@ BOOLEAN QuerySeValidateImageDataOffset(
         case 26200:
         case 26300:
 			Pattern = ptSeValidateImageData_2_15063_16299;
-			PatchSize = sizeof(ptSeValidateImageData_2_15063_16299);
+			PatternSize = sizeof(ptSeValidateImageData_2_15063_16299);
 			break;
 
         default:
@@ -1049,6 +1059,11 @@ BOOLEAN QuerySepInitializeCodeIntegrityOffset(
         PatternSize = sizeof(ptSepInitializeCodeIntegrity_16299);
         break;
 		
+    case 19041:
+    case 19042:
+    case 19043:
+    case 19044:
+    case 19045:
     case 26100:
     case 26200:
     case 26300:
@@ -1068,6 +1083,16 @@ BOOLEAN QuerySepInitializeCodeIntegrityOffset(
         ScanSize,
         Pattern,
         PatternSize);
+
+    if ((Address == 0) && (BuildNumber >= 19041) && (BuildNumber <= 19045)) {
+        WCHAR Diagnostic[128];
+        _snwprintf_s(Diagnostic,
+            RTL_NUMBER_OF(Diagnostic),
+            RTL_NUMBER_OF(Diagnostic) - 1,
+            TEXT("Patch: SepInitializeCodeIntegrity symbol RVA %08llX"),
+            (ULONG_PTR)ScanPtr - (ULONG_PTR)DllBase);
+        cuiPrintText(g_ConOut, Diagnostic, g_ConsoleOutput, TRUE);
+    }
 
     if (Address != 0) {
         //
