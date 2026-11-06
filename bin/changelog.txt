@@ -1,5 +1,10 @@
 Changes since v1.0.0 release
 
+v1.2.3 Nov 6, 2026
+Add Windows 10 builds 19041-19045 (2004 through 22H2) to SeValidateImageData
+and SepInitializeCodeIntegrity scan paths (verified against ntoskrnl for each release).
+Correct PatternSize assignment in SeValidateImageData signature fallback for 26100+.
+
 v1.2.2 Oct 8, 2026 - Minor update
 Increased MajorVerison to 26300 for 26H2
 

@@ -11,7 +11,7 @@ x64 Windows, supported versions:
 * Windows 7 SP1
 * Windows 8
 * Windows 8.1
-* Windows 10 (TH1/TH2/RS1/RS2/RS3)
+* Windows 10 (TH1/TH2/RS1/RS2/RS3, 2004/20H2/21H1/21H2/22H2)
 * Windows 11 (24H2/25H2/26H2)
 
 Administrative privilege is required.
@@ -49,8 +49,8 @@ In order to build from source you need Microsoft Visual Studio 2015 and later ve
 
 Project resumed Sept 23, 2026.
 
-Last update Nov 1, 2026.
-Tested on Ntoskrnl version Windows 11 26300.9711
+Last update Nov 6, 2026.
+Tested on Ntoskrnl version Windows 11 26300.9711 and Windows 10 22H2 (19045)
 
 ~~If you still need PatchGuard disable refer to these repositories (alphabetical order):~~
 
